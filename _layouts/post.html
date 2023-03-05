@@ -22,7 +22,7 @@ layout: default
 <article class="my-6">
 	<div class="splide-parent">
 		<div class="splide splide-main-{{ i }}">
-			<div class="splide__track">
+			<!-- <div class="splide__track">
 				<ul class="splide__list">
 					{% for image in page.products %}
 					<li class="splide__slide">
@@ -30,10 +30,10 @@ layout: default
 					</li>
 					{% endfor %}
 				</ul>
-			</div>
+			</div> -->
 		</div>
 		<div class="splide splide-nav-{{ i }} my-6">
-			<div class="splide__track">
+			<!-- <div class="splide__track">
 				<ul class="splide__list">
 					{% for image in page.products %}
 					<li class="splide__slide rounded-xl overflow-hidden !ml-6">
@@ -44,7 +44,7 @@ layout: default
 						<img src="/images/empty.png" alt="empty" width="100" height="100" class="w-full h-full object-cover hidden" />
 					</li>
 				</ul>
-			</div>
+			</div> -->
 		</div>
 	</div>
 
@@ -84,20 +84,20 @@ layout: default
 		</div>
 
 		{% if page.tags %}
-		<div class="my-10">
+		<!-- <div class="my-10">
 			{% for tag in page.tags %}
 			<div class="bg-zinc-100 text-zinc-500 text-xs rounded-lg py-2 px-3 inline-block mr-2">#{{ tag }}</div>
 			{% endfor %}
-		</div>
+		</div> -->
 		{% endif %}
 
 		<!-- <div>
 			<a href="https://nikojulius.com/member/aff/go/muhnurulhakim?i=19" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-600 text-white block py-3 px-4 rounded-lg w-full text-center mt-4">
 				Daftar {{ page.title }}
 			</a>
-			<!-- <a href="https://api.whatsapp.com/send?phone={{ site.whatsapp_number }}&amp;text={{ site.whatsapp_text }}" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-600 text-white block py-3 px-4 rounded-lg w-full text-center mt-4" {% if site.whatsapp_text %}data-title="{{ page.title }}"{% endif %}>
+			<a href="https://api.whatsapp.com/send?phone={{ site.whatsapp_number }}&amp;text={{ site.whatsapp_text }}" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-600 text-white block py-3 px-4 rounded-lg w-full text-center mt-4" {% if site.whatsapp_text %}data-title="{{ page.title }}"{% endif %}>
 				Order {{ page.title }}
-			</a> -->
+			</a>
 		</div> -->
 	</div>
 </article>
