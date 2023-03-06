@@ -43,17 +43,17 @@
 	t.src=v;s=b.getElementsByTagName(e)[0];
 	s.parentNode.insertBefore(t,s)}(window, document,'script',
 	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '705788597956183');
-	fbq('track', 'PageView');
-	fbq('track', 'ViewContent');
+	fbq('set', 'autoConfig', false, '705788597956183');
+        fbq('init', '705788597956183');
+        fbq('track', 'PageView');
+	fbq('track', 'standart');                                                
+    
+    $("a[href=\"#\"]").click(function(e) {
+        e.preventDefault();
+        return false;
+    });
 	</script>
-	<script type="text/javascript">
-	$('#addToCartButton').click(function() {
-	fbq('track', 'Lead');
-	fbq('track', 'Purchase', {currency: "IDR", value: 197000});
-	  });
-	</script>
-
+	
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=705788597956183&ev=PageView&noscript=1"
 	/></noscript>
@@ -67,16 +67,61 @@
 	<div class="h-screen overflow-auto max-md:pb-28 viewport">
 		<div class="flex flex-col items-center justify-center min-h-full py-6 [&_header]:w-full [&_main]:w-full [&_footer]:w-full [&_main_article]:mb-20 last:[&_main_article]:mb-0 bg-white max-w-[600px] mx-auto">
 
-			{% if page.url == '/' %}
+			<!-- {% if page.url == '/' %}
 			<header>
 				<img src="{{ site.url }}/assets/img/banner-main.jpeg" alt="main banner" width="600" height="240" class="-mt-6" />
 			</header>
-			{% endif %}
+			{% endif %} -->
 
-			<main>
-				{{ content }}
-			</main>
+			<div class="mx-6">
+				<div class="prose my-10">
+				<a href="https://nikojulius.com/member/aff/go/muhnurulhakim?i=19" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-600 block py-3 px-4 rounded-lg w-full text-center mt-4" style="color:white;text-decoration:none">
+					<b>Daftar Sekarang</b>
+				</a>
+					<br>
+					<br>
+					<h1><span class="black">Bangun</span>
+					    <span class="red">Audience</span>
+					    <span class="black">, Tingkatkan</span>
+					    <span class="blue">Omzet</span>
+					    <span class="black">dan</span>
+					    <span class="red">Brand</span>
+					    <span class="black">Kamu di Tiktok!</span>
+					</h1>
 
+					<style>
+					h1{font-weight:700; font-size:30px; text-align:center;}
+					.black{color:black}
+					.red{color:red}
+					.blue{color:blue}
+					</style>
+				<br>
+				<center>Bahkan bila Anda pemula sekalipun, karena sebenarnya dengan memahami bagaimana cara kerja IG. Anda bisa mengembangkan Akun Anda dengan lebih optimal lagi...</center>
+				<br>
+				<p align="center">
+				  <img src="https://nikojulius.com/lp/assets/webinar-kelas-instagram-organik/images/nikojulius.png" />
+				</p>
+				<center><span style="color:grey;"><b>Niko Julius</b></span></center>
+				<center><span style="color:grey;">Social Media Expert</span></center>
+				<br>
+				<br>
+				<center><span style="color:black;font-weight:700;font-size:20px">
+				Ini yang akan Anda <u>pelajari</u>:
+				</span></center>
+				<br>
+				<ul>
+				  	<li>✅ Memahami <b>apa yang paling diinginkan IG</b> sehingga kita bisa tahu <b>apa yang <u>HARUS</u> dilakukan</b> dan bisa mendapatkan promosi Gratis dari IG.</li>
+					<br>
+				  	<li>✅ Mempelajari bagaimana cara <b>Algoritma IG Bekerja</b>. Sehingga kita bisa mendapatkan hasil yang optimal dari aktivitas kita di IG.</li>
+					<br>
+					<li>✅ <b>Strategi</b> Utama saya untuk mengembangkan Akun dan bisa mendapatkan <b>10,000 Follower pertama secara Organik</b>.</li>
+				</ul>
+				<br>
+				<a href="https://nikojulius.com/member/aff/go/muhnurulhakim?i=19" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-600 block py-3 px-4 rounded-lg w-full text-center mt-4" style="color:white;text-decoration:none">
+					<b>Daftar Sekarang</b>
+				</a>
+			</div>
+					
 			<footer>
 				<button type="button" class="fixed bottom-4 right-4 flex items-center justify-center rounded-xl py-2 px-2 shadow-xl text-white bg-emerald-600 hover:bg-emerald-500 focus-visible:outline-none disabled:hover:bg-emerald-600" id="backTop">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20">
@@ -84,41 +129,6 @@
 					</svg>
 					<span class="sr-only">Kembali Ke Atas</span>
 				</button>
-
-				<!-- <div class="bg-zinc-100 py-10 px-4 mt-7">
-					<p class="text-center mb-2"><b>Melayani pembayaran melalui:</b></p>
-					<div class="flex flex-wrap max-w-[350px] mx-auto -mb-2">
-						<img src="{{ site.url }}/assets/img/payment-bca.svg" alt="BCA" width="50" height="10" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-mandiri.svg" alt="Mandiri" width="50" height="10" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-bni.svg" alt="BNI" width="50" height="10" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-dana.svg" alt="Dana" width="50" height="10" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-ovo.svg" alt="Ovo" width="50" height="10" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-QRIS.svg" alt="QRIS" width="50" height="10" class="object-contain mx-auto py-4" />
-						<!-- <img src="{{ site.url }}/assets/img/payment-bri.svg" alt="BRI" width="50" height="10" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-bsi.svg" alt="BSI" width="120" height="30" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-bankjateng.svg" alt="Bank Jateng" width="120" height="30" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-maybank.svg" alt="Maybank" width="120" height="30" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-linkaja.svg" alt="LinkAja" width="120" height="30" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/payment-gopay.svg" alt="Gopay" width="120" height="30" class="object-contain mx-auto py-4" /> -->
-					</div>
-				</div> -->
-
-				<!-- <div class="py-10 px-4">
-					<p class="text-center mb-2">Pengiriman menggunakan ekspedisi:</p>
-					<div class="flex flex-wrap max-w-[500px] mx-auto -mb-2">
-						<img src="{{ site.url }}/assets/img/kirim-grabexpress.svg" alt="GrabExpress" width="90" height="120" class="object-contain mx-auto py-4" style="width:90px" />
-						<img src="{{ site.url }}/assets/img/kirim-gosend.svg" alt="GoSend" width="90" height="120" class="object-contain mx-auto py-4" style="width:90px" />
-						<img src="{{ site.url }}/assets/img/kirim-gofood.svg" alt="GoFood" width="130" height="40" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/kirim-grabfood.svg" alt="GrabFood" width="130" height="40" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/kirim-shopeefood.svg" alt="Shopee Food" width="130" height="40" class="object-contain mx-auto py-4" style="width:200px" />
-						<img src="{{ site.url }}/assets/img/ekspedisi-sicepat.svg" alt="SiCepat" width="130" height="40" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/ekspedisi-tiki.svg" alt="TiKi" width="130" height="40" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/ekspedisi-wahana.svg" alt="Wahana" width="130" height="40" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/ekspedisi-pos.svg" alt="Pos" width="130" height="40" class="object-contain mx-auto py-4" />
-						<img src="{{ site.url }}/assets/img/ekspedisi-jne.svg" alt="JNE" width="130" height="40" class="object-contain mx-auto py-4" />
-					</div> -->
-					<!-- <img src="{{ site.url }}/assets/img/ekspedisi-aman.jpeg" alt="Ekspedisi" width="800" height="152" /> -->
-				</div>
 			</footer>
 
 		</div>
